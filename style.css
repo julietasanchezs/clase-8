@@ -1,0 +1,61 @@
+.box {
+    border-radius: 6px;
+    height: 40px;
+    width: 80px;
+    margin: 50px auto;
+}
+
+.box-one {
+    background-color: aquamarine;
+}
+
+.box-two {
+    background-color: antiquewhite;
+    /* las trancisiones necesitan dos valores: 
+    1) Transicion-property
+    2) Transition-duration
+    */
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+/* pseudo clase :hover cuando pasas el mouse por el elemento que lo tenga aplicado, va a pasar lo que le digamos */
+
+.box:hover {
+    /* transformacion / agregar un numero entero sin unidades de medida para modificar el elemento */
+    transform: scale(4);
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5 {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+} 
+
+.circle1 {
+    background-color: aqua;
+}
+
+.circle2 {
+    background-color: antiquewhite;
+}
+
+.circle3 {
+    background-color: beige;
+}
+
+.circle4 {
+    background-color: burlywood;
+}
+
+.circle5 {
+    background-color: darkmagenta;
+}
+
+.container-circle:hover > div {
+    transform: translateX(400px);
+}
+
+
+
